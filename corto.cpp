@@ -121,10 +121,16 @@ int main(){
         pD1=z1-(z1*0.2);
         pD2=z2-(z2*0.2);
         pD3=z3-(z3*0.2);
-
+        pD4=z4-(z4*0.15);
+        pD5=z5-(z5*0.15);
+        pD6=z3-(z3*0.15);
+        
         cout << "1.Zapato Deportivo "<< z1 << "(descuento de 20%), precio con descuento "<< pD1<< endl;
         cout << "2.Zapato Formal "<< z2 << "(descuento de 20%), precio con descuento "<< pD2<< endl;
         cout << "3.Zapato Premium "<< z3 << "(descuento de 20%), precio con descuento "<< pD3<< endl;
+        cout << "4.Zapato Casual "<< z4 << "(descuento de 20%), precio con descuento "<< pD4<< endl;
+        cout << "5.Zapato Elegante "<< z5 << "(descuento de 20%), precio con descuento "<< pD5<< endl;
+        cout << "6.Zapato Premium "<< z3 << "(descuento de 20%), precio con descuento "<< pD6<< endl;
         cout << "Seleccione una opcion:"<< endl;
         cin >> compra;
             switch (compra)
@@ -147,6 +153,27 @@ int main(){
                 cout <<"Ha seleccionado Zapato Premium, con un precio final de "<< pD3<< endl;
                 cout <<"Compra realizada con exito" << endl;
                 saldoRestante=saldo-pD3;
+                cout <<"Su saldo restante es de "<< saldoRestante<< endl;
+                cout <<"Gracias por su compra"<<endl;
+                break;
+            case 4:
+                cout <<"Ha seleccionado Zapato Casual, con un precio final de "<< pD4<< endl;
+                cout <<"Compra realizada con exito" << endl;
+                saldoRestante=saldo-pD4;
+                cout <<"Su saldo restante es de "<< saldoRestante<< endl;
+                cout <<"Gracias por su compra"<<endl;
+                break;
+            case 5:
+                cout <<"Ha seleccionado Zapato Elegante, con un precio final de "<< pD5<< endl;
+                cout <<"Compra realizada con exito" << endl;
+                saldoRestante=saldo-pD5;
+                cout <<"Su saldo restante es de "<< saldoRestante<< endl;
+                cout <<"Gracias por su compra"<<endl;
+                break;
+            case 6:
+                cout <<"Ha seleccionado Zapato Premium, con un precio final de "<< pD6<< endl;
+                cout <<"Compra realizada con exito" << endl;
+                saldoRestante=saldo-pD6;
                 cout <<"Su saldo restante es de "<< saldoRestante<< endl;
                 cout <<"Gracias por su compra"<<endl;
                 break;
